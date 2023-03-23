@@ -1,0 +1,32 @@
+body {
+  font-size: 15px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+main {
+  background-color: hsl(212, 45%, 89%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: hsl(0, 0%, 100%);
+
+  margin: 0 auto;
+}
+
+.qr-img {
+  width: 200px;
+  height: auto;
+}
+
+.subtitle {
+
+}
+
+.description {
+
+}
