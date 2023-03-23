@@ -1,9 +1,8 @@
 :root {
-  --black: black;
-  --white: hsl(0, 0%, 100%);
-  --light-gray: hsl(212, 45%, 89%);
-  --grayish-blue: hsl(220, 15%, 55%);
-  --dark-blue: hsl(218, 44%, 22%);
+  --white: 0, 0%, 100%;
+  --light-gray: 212, 45%, 89%;
+  --grayish-blue: 220, 15%, 55%;
+  --dark-blue: 218, 44%, 22%;
 }
 
 img {
@@ -15,11 +14,11 @@ body {
   font-size: 15px;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  color: var(--grayish-blue);
+  color: hsl(var(--dark-blue));
 }
 
 main {
-  background-color: var(--light-gray);
+  background-color: hsl(var(--light-gray));
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -29,7 +28,7 @@ main {
 .modal {
   width: 300px;
   padding: 1rem;
-  background-color: var(--white);
+  background-color: hsl(var(--white));
   margin: 0 auto;
 
   overflow-wrap: break-word;
@@ -45,12 +44,12 @@ main {
 
 .subtitle {
   font-weight: 700;
-  color: var(--black);
+  color: hsl(var(--dark-blue));
   font-size: 1.25rem;
 }
 
 .description {
-  color: hsl(--grayish-blue, 0.5);
+  color: hsl(var(--grayish-blue));
 }
 
 @media only screen and (min-width: 500px) {
