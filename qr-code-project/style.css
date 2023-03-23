@@ -1,3 +1,11 @@
+:root {
+  --black: black;
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
 img {
   max-width: 100%;
 }
@@ -7,11 +15,11 @@ body {
   font-size: 15px;
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  color: hsl(218, 44%, 55%);
+  color: var(--grayish-blue);
 }
 
 main {
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--light-gray);
   padding: 2rem 1rem;
   display: flex;
   justify-content: center;
@@ -20,14 +28,15 @@ main {
 
 .modal {
   width: 300px;
-  padding: 12.5px;
-  background-color: hsl(0, 0%, 100%);
+  padding: 1rem;
+  background-color: var(--white);
   margin: 0 auto;
 
   overflow-wrap: break-word;
   text-align: center;
 
   border-radius: 5%;
+  box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.075);
 }
 
 .qr-img {
@@ -36,16 +45,16 @@ main {
 
 .subtitle {
   font-weight: 700;
-  color: hsl(255, 100%, 0%);
+  color: var(--black);
   font-size: 1.25rem;
 }
 
 .description {
+  color: hsl(--grayish-blue, 0.5);
 }
 
 @media only screen and (min-width: 500px) {
   main {
-    background-color: hsl(212, 45%, 89%);
     max-width: 1300px;
     height: 600px;
     margin: 0 auto;
